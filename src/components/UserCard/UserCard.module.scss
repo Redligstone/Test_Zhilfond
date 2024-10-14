@@ -1,0 +1,48 @@
+.card {
+    display: flex;
+    align-items: center;
+
+    border: 1px solid #e0e0e0;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    box-sizing: border-box;
+    height: 70px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &.active {
+        background-color: var(--chosen-user);
+    }
+    &:hover {
+        background-color: var(--hover-user);
+    }
+}
+
+.avatar {
+    margin-right: 5px;
+    height: 100%;
+    max-width: 70px;
+    object-fit: cover;
+    border-right: var(--chosen-user) 2px solid;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.info {
+    flex: 1;
+    padding: 0 10px;
+}
+
+.name {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.email {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+}
